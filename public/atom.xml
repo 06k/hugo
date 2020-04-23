@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh-CN">
+    <title type="text">白歌的笔记</title>
+    <subtitle type="html">个人文字记录，望后共鸣</subtitle>
+    <updated>2020-04-23T19:05:43+08:00</updated>
+    <id>https://example.com/</id>
+    <link rel="alternate" type="text/html" href="https://example.com/" />
+    <link rel="self" type="application/atom+xml" href="https://example.com/atom.xml" />
+    <author>
+            <name>白歌</name>
+            <uri>https://example.com/</uri>
+            
+                <email>vome#qq.com</email>
+            </author>
+    <rights>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</rights>
+    <generator uri="https://gohugo.io/" version="0.69.1">Hugo</generator>
+        <entry>
+            <title type="text">《冰与火之歌》</title>
+            <link rel="alternate" type="text/html" href="https://example.com/life/a-song-of-ice-and-fire/" />
+            <id>https://example.com/life/a-song-of-ice-and-fire/</id>
+            <updated>2020-04-23T18:07:34+08:00</updated>
+            <published>2018-01-11T18:17:54+08:00</published>
+            <author>
+                    <name>白歌</name>
+                    <uri>https://io-oi.me/</uri>
+                    <email>vome#qq.com</email>
+                    </author>
+            <rights>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh)</rights>
+    
+    <summary type="html"><![CDATA[Winter is coming... Winter is here.]]></summary>
+            
+                <content type="html"><![CDATA[<p><img src="/images/a-song-of-ice-and-fire-title.png" alt="a-song-of-ice-and-fire-title.png" title="Kindle 截图"></p>
+<p>将近两个月看完《冰与火之歌》五卷：权力的游戏、列王的纷争、冰雪的风暴、群鸦的盛宴、魔龙的狂舞。拼命把溜出来的肠子塞回肚子里，乌鸦啄食着被钉城墙上蛆虫蠕动的头颅，动不动就调情啪啪啪还啊啊啊……</p>
+<p>眼睁睁看着自认为的主角一个又一个的突然变成了群鸦的盛宴，一个又一个人物的眼睛才看清列王的纷争，一个又一个人物的嘴与心的谎言才看清权力的游戏，而这一个又一个人物却都是自己！冰雪的风暴与魔龙的狂舞却在自己的脑阔中同时上演，自己的脑阔在冰与火之歌中冲突到爆炸！</p>
+<p>经历过《神曲》地狱到天堂的过去之旅，遨游过「阿西莫夫」那浩瀚无垠的未来宇宙，体会过《浮士德》对理想的渴望，享受过「尼采」那日神阿波罗的至高喜悦和酒神狄俄尼索斯的狂欢，歌唱过 Coldplay 那生命无上，却第一次在《冰与火之歌》谎言的游戏中爆炸！</p>
+<p>言语如风<br>
+可一阵风<br>
+让你在凛冬中尖叫<br>
+而非寒冷</p>
+<p>凛冬将至<br>
+可那是谎言<br>
+这不是谎言<br>
+这就是权力的游戏</p>
+]]></content>
+            
+            
+            
+            
+            
+                
+                    
+                
+                    
+                        
+                            
+                            
+                            
+                                <category scheme="https://example.com/tags/reading/" term="reading" label="reading" />
+                            
+                        
+                            
+                            
+                            
+                                <category scheme="https://example.com/tags/poetry/" term="poetry" label="poetry" />
+                            
+                        
+                    
+                
+            
+        </entry>
+    
+</feed>
