@@ -1,4 +1,4 @@
-const workboxVersion = '5.0.0';
+const workboxVersion = '5.1.2';
 
 importScripts(`https://storage.googleapis.com/workbox-cdn/releases/${workboxVersion}/workbox-sw.js`);
 
@@ -27,6 +27,24 @@ workbox.routing.registerRoute(
             new workbox.cacheableResponse.CacheableResponsePlugin({
                 statuses: [0, 200]
             })
+        ]
+    })
+);
+
+// Videos
+workbox.routing.registerRoute(
+    /\.(?:mp4|webm|ogg)$/,
+    new workbox.strategies.CacheFirst({
+        cacheName: "videos",
+        plugins: [
+            new workbox.expiration.ExpirationPlugin({
+                maxEntries: 1000,
+                maxAgeSeconds: 60 * 60 * 24 * 30
+            }),
+            new workbox.cacheableResponse.CacheableResponsePlugin({
+                statuses: [200]
+            }),
+            new workbox.rangeRequests.RangeRequestsPlugin()
         ]
     })
 );
@@ -76,23 +94,6 @@ workbox.routing.registerRoute(
     /^https:\/\/cdn\.jsdelivr\.net/,
     new workbox.strategies.CacheFirst({
         cacheName: "static-libs",
-        plugins: [
-            new workbox.expiration.ExpirationPlugin({
-                maxEntries: 1000,
-                maxAgeSeconds: 60 * 60 * 24 * 30
-            }),
-            new workbox.cacheableResponse.CacheableResponsePlugin({
-                statuses: [0, 200]
-            })
-        ]
-    })
-);
-
-// External Images
-workbox.routing.registerRoute(
-    /^https:\/\/raw\.githubusercontent\.com\/reuixiy\/hugo-theme-meme\/master\/static\/icons\/.*/,
-    new workbox.strategies.CacheFirst({
-        cacheName: "external-images",
         plugins: [
             new workbox.expiration.ExpirationPlugin({
                 maxEntries: 1000,
