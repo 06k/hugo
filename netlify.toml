@@ -1,5 +1,15 @@
-[context.deploy-preview.environment]
-  HUGO_VERSION = "0.69.1"
+[build]
+  publish = "public"
+  command = "npm run build"
 
-[context.production.environment]
+[build.environment]
   HUGO_VERSION = "0.69.1"
+  HUGO_ENV = "production"
+  HUGO_ENABLEGITINFO = "true"
+
+[context.production]
+  command = "npm run build && npm run ipfs-deploy"
+
+[[redirects]]
+  from = "https://gao.netlify.com/*"
+  force = true
