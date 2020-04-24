@@ -4,6 +4,8 @@ date: 2020-04-24T11:59:10+08:00
 draft: false
 ---
 
+常用的Git命令做一个记录
+
 ## 设置全局用户与邮箱
 ```
 设置用户名：git config --global user.name "name"
