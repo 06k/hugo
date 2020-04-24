@@ -2,6 +2,8 @@
 title = "ABOUT"
 +++
 
+<center><iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=29457620&auto=1&height=66"></iframe></center>
+
 
  起 因是因为想好好磨练一下自己的文学功底，记录生活中的各种感悟，也记录下来所学习的一些技术性的过程
  
