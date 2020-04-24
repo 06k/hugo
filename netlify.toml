@@ -2,9 +2,7 @@
   publish = "public"
   command = "npm run build"
 
-
-[context.deploy-preview.environment]
+[build.environment]
   HUGO_VERSION = "0.69.1"
-
-[context.production.environment]
-  HUGO_VERSION = "0.69.1"
+  HUGO_ENV = "production"
+  HUGO_ENABLEGITINFO = "true"
