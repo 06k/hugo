@@ -18,6 +18,11 @@ jobs:
           extended: true
       - name: Build
         run: hugo -D
+      - name: npm
+        run: npm init
+      - name: npm-sw
+        run: ./node_modules/gulp/bin/gulp.js build
+                           
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v2.5.1
         env:
