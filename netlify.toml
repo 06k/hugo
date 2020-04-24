@@ -1,6 +1,6 @@
 [build]
   publish = "public"
-  command = "npm run build"
+  command = "npm init && npm run build"
 
 [build.environment]
   HUGO_VERSION = "YOUR_HUGO_VERSION"
