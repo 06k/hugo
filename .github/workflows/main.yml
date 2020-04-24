@@ -19,7 +19,7 @@ jobs:
       - name: Build
         run: hugo -D
       - name: npm
-        run: npm install
+        run: npm install workbox-build gulp gulp-uglify readable-stream uglify-es --save-dev
       - name: npm-sw
         run: ./node_modules/gulp/bin/gulp.js build
                            
