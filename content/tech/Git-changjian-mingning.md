@@ -47,5 +47,29 @@ ssh-keygen -t rsa -C "eamil"
 ```
 你需要把邮件地址换成你自己的邮件地址，然后一路回车，使用默认值即可，因为这个个Key仅仅用于简单的服务，所以也无需设置密码。
  ```.ssh```目录生产两个文件:```id_rsa私匙```和```id_rsa.pub公匙```我们需要的是把公匙内容复制到Github设置里密匙设置就行
- 
- 
+
+ ## 团队协作的场景
+
+（1）不同人同时修改不同区域
+
+Copy
+
+```
+# 1.先把远端的仓库fetch下来git fetch git_name# 2.再将本地和远端仓库合并git merge remote_branch_name# 3.合并后push到远端仓库git push git_name branch_name--------------------------------------------# 其中 1&2 可以用pull命令代替# 将远端的仓库pull下来（fetch+merge）git pull git_name
+```
+
+（2）不同人同时修改同一区域
+
+手动修改该文件，并删掉merge的提示信息
+
+（3）更改文件名对他人影响
+
+1号队员更改文件名并push，2号队员修改内容发现push被reject。
+
+2号队员直接pull即可。
+
+ （4）不使用 `git push -f`
+
+（5）不对公共 `commit` 做变基
+
+只能对 `本地commit` 做变基，一旦 `push` 到远端仓库，就不可以 `pull` 下来，做变基
