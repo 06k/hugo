@@ -108,3 +108,13 @@ git remote set-url origin github2:freehost/mail.git
 ```
 ssh -T git@github2
 ```
+
+## 后面使用 图形化真的很好用
+
+其实Git GUI本身是真的没有这个语言设置选项的，所幸的是网上已有网友针对其开发出了对应的汉化包，我们只需要下载安装即可，具体可见
+
+[中文文件地址](https://github.com/stayor/git-gui-zh)
+
+/mingw64/share/git-gui/lib/msgs/zh_cn.msg，有可能Git的安装路径下面没有msgs这个文件夹，那么需要自己创建之后再将这个汉化包来放进去。这样就算是汉化完了，```在仓库里面右击Git GUI可以发现已经汉化完毕```
+
+![注意是仓库下右击Git GUi才有这个界面](../imges/image-20200503174228795.png)
