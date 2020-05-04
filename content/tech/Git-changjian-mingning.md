@@ -118,3 +118,4 @@ ssh -T git@github2
 /mingw64/share/git-gui/lib/msgs/zh_cn.msg，有可能Git的安装路径下面没有msgs这个文件夹，那么需要自己创建之后再将这个汉化包来放进去。这样就算是汉化完了，```在仓库里面右击Git GUI可以发现已经汉化完毕```
 
 ![注意是仓库下右击Git GUi才有这个界面](../imges/image-20200503174228795.png)
+
