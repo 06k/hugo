@@ -1,8 +1,10 @@
 ---
-title: "Linux Unmot Gua Zai Disk"
+title: "Linux 下自动挂载硬盘"
 date: 2020-05-04T18:55:39+08:00
 draft: 
 ---
+
+后面补充遇到的问题
 
 ### 查看分区信息
 
